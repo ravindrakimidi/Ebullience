@@ -1,2 +1,2 @@
 # Ebullience
-MVC architecture application
+A basic MVC architecture application
