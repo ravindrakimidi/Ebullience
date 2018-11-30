@@ -1,2 +1,3 @@
 # Ebullience
-MVC architecture application
+A basic MVC architecture application
+Using JSP and servlets
