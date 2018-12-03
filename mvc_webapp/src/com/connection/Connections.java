@@ -2,21 +2,17 @@ package com.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
-class Connections{  
-public static void main(String args[])
+public class Connections{  
+public static void insertData(String userName, String email)
 {
 	try
 	{
-		Class.forName("com.mysql.jdbc.Driver");  
-	Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://localhost:3306/schema1","root","shru07");  
+		Class.forName("com.mysql.jdbc.Driver");
+	         Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mvc_schema","root","shruby0711");  
 			Statement stmt=con.createStatement();  
-			ResultSet rs=stmt.executeQuery("select * from userlist");  
-			while(rs.next())  
-			System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+			stmt.execute("insert into userlist values('"+2+"','"+userName+"','"+userName+"','"+email+"')");  
 			con.close();  
 			}catch(Exception e){ System.out.println(e);}  
 			}  

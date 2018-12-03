@@ -13,7 +13,7 @@ body
 	left : 50%;
 	transform : translate(-50%,-50%);
 	width : 350px;
-	height : 420px;
+	height : 600px;
 	padding : 80px 40px;
 	box-sizing : border-box;
 	background : rgba(0,0,0,.5);
@@ -69,7 +69,8 @@ h1
 	margin-bottom : 20px;
 }
 .LoginBox input[type="text"],
-.LoginBox input[type="password"]
+.LoginBox input[type="password"],
+.LoginBox input[type="email"]
 {
 	border : none;
 	border-bottom : 1px solid #fff;
