@@ -13,7 +13,7 @@
 
 	if(username.equalsIgnoreCase("admin"))
 	{
-		response.sendRedirect("index1.html");
+		response.sendRedirect("LoggedIn.html");
 	}else
 	{
 		response.sendRedirect("Error.html");
